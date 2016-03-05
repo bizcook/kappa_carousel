@@ -1,0 +1,17 @@
+.students {
+  display: inline-block;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.btn-lg{
+  margin: 0 auto;
+  padding: 40px;
+}
+.container{
+  margin: 100px;
+  padding: 10px;
+}
+h1{
+  text-align: center;
+}
