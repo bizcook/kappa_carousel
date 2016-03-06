@@ -49,12 +49,13 @@ $(document).ready(function () {
 function appendDom(data) {
   for (var i = 0 ; i < data.kappa.length ; i++) {
     $(".students").append('<div style="display:none" class="student-profile'+ counter + '"></div>');
-    //finding the last child in students
+
+    //setting var $el variable for where the info should be appended to
     var $el = $(".students").children().last();
     $el.append('<h3>' + data.kappa[i].name + '</h3>');
-    $el.append('<p>' + data.kappa[i].location + '</p>');
-    $el.append('<p>' + data.kappa[i].spirit_animal + '</p>');
-    $el.append('<p>' + data.kappa[i].shoutout + '</p>');
+    $el.append('<h5>' + "Location: " + data.kappa[i].location + '</h5>');
+    $el.append('<h5>' + "Spirit Animal: " + data.kappa[i].spirit_animal + '</h5>');
+    $el.append('<p>' + "Shoutout: " + data.kappa[i].shoutout + '</p>');
 
     counter++;
   }
